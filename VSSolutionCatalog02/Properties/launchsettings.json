@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "VSSolutionCatalog02 (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "VSSolutionCatalog02 (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

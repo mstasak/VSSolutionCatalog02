@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="VSSolutionCatalog02.Views.DBManagerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea" RowSpacing="5" ColumnSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="25" Height="AUTO" />
+            <RowDefinition MinHeight="500" Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Button Grid.Row="0" Grid.Column="0" Content="Test DB Connection" Command="{x:Bind ViewModel.TestConnectCommand}" />
+        <TextBlock Grid.Row="0" Grid.Column="1">Attempt to connect to the database</TextBlock>
+
+        <Button IsEnabled="False" Grid.Row="1" Grid.Column="0" Content="Delete VSSolCat DB" />
+        <TextBlock Grid.Row="1" Grid.Column="1">Delete the app's dedicated database from the host, along with any users, roles, grants, etc.</TextBlock>
+
+        <Button IsEnabled="False" Grid.Row="2" Grid.Column="0" Content="Create Empty VSSolCat DB" />
+        <TextBlock Grid.Row="2" Grid.Column="1">Create the app's dedicated database on the host.</TextBlock>
+
+        <Button IsEnabled="False" Grid.Row="3" Grid.Column="0" Content="Create VSSolCat Users and Roles" />
+        <TextBlock Grid.Row="3" Grid.Column="1">Delete the app's dedicated database from the host, along with any users, roles, grants, etc.</TextBlock>
+
+        <Button IsEnabled="False" Grid.Row="4" Grid.Column="0" Content="Create VSSolCat Schema" />
+        <TextBlock Grid.Row="4" Grid.Column="1">Create the app's tables, views, indexes, constraints, relations, etc.</TextBlock>
+
+        <Button IsEnabled="False" Grid.Row="5" Grid.Column="0" Content="Grant Permissions" />
+        <TextBlock Grid.Row="5" Grid.Column="1">Grant permissions to roles and roles to users.</TextBlock>
+
+        <Button Grid.Row="6" Grid.Column="0" Content="Populate Sample Data" Command="{x:Bind ViewModel.PopulateDataCommand}" />
+        <TextBlock Grid.Row="6" Grid.Column="1">Make some sample data to view, edit through the app.</TextBlock>
+
+        <Button Grid.Row="7" Grid.Column="0" Content="View Some Data" Command="{x:Bind ViewModel.ViewDataCommand}" />
+        <TextBlock Grid.Row="7" Grid.Column="1">Show row counts and a few rows' contents for each table.</TextBlock>
+
+        <Button Grid.Row="8" Grid.Column="0" Content="Truncate Data" Command="{x:Bind ViewModel.DeleteDataCommand}" />
+        <TextBlock Grid.Row="8" Grid.Column="1">Delete tables' contents, but leave structure in place.</TextBlock>
+
+        <TextBlock Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="2" Text="Result:" />
+        <TextBlock Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="2" FontFamily="Courier New" TextWrapping="Wrap" Text="{x:Bind ViewModel.StatusMessage, Mode=OneWay}" />
+
+    </Grid>
+</Page>
