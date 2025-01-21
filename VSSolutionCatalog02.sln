@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSolutionCatalog02", "VSSolutionCatalog02\VSSolutionCatalog02.csproj", "{81A25920-2886-4E8B-AAB4-40DF0509C12E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSolutionCatalog02.Core", "VSSolutionCatalog02.Core\VSSolutionCatalog02.Core.csproj", "{F88C2275-631F-419D-9FB1-CF7625DC3A20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSolutionCatalog02.Tests.MSTest", "VSSolutionCatalog02.Tests.MSTest\VSSolutionCatalog02.Tests.MSTest.csproj", "{C8070942-E1A1-46F0-ADE3-57ED1983D74B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C28E129-BB8A-4AA6-8760-628C502E234C}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
